@@ -1,0 +1,42 @@
+MATHEMATICS
+
+- Python DSA - Count Digits 
+    - check if given number is of type number
+    - convert number to stirng 
+    - find length of the string
+    - result = length
+    - check if given number have decimal Part
+        yes : result = length-1
+--------------------------------------------------------------------
+- Palindrome Number 
+    def palindromNumberOString(n):
+        cleanN = re.sub(r'[^a-zA-z0-9]','', str(n))
+        len = len(cleanN)
+        l = 0, r = len-1
+        while(l<=r):
+            if(n[l] !== n[r]):
+                return false
+            l += 1
+            r -= 1
+        return true
+--------------------------------------------------------------------
+- Factorial of a number 
+--------------------------------------------------------------------
+- Trailing Zeros in Factorial 
+--------------------------------------------------------------------
+- GCD and HCF of two numbers 
+--------------------------------------------------------------------
+- LCM of two numbers 
+--------------------------------------------------------------------
+- Check for Prime 
+--------------------------------------------------------------------
+- Prime Factors 
+--------------------------------------------------------------------
+- All Divisors of a Number 
+--------------------------------------------------------------------
+- Sieve of Eratosthenes 
+--------------------------------------------------------------------
+- Computing Power 
+--------------------------------------------------------------------
+- Iterative Power 
+--------------------------------------------------------------------
