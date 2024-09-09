@@ -1,0 +1,59 @@
+When comparing the time complexity (TC) of the recursive and iterative approaches for calculating Fibonacci numbers, there are significant differences due to the nature of the algorithms.
+
+### Recursive Fibonacci
+```python
+def fibonacci_recursive(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+```
+
+#### Time Complexity:
+- **Exponential Time Complexity**: \(O(2^n)\)
+
+  The recursive Fibonacci algorithm has an exponential time complexity because it recalculates the same Fibonacci numbers multiple times. As the value of \(n\) increases, the number of recursive calls grows exponentially. Specifically, the recursion tree for `fibonacci_recursive(n)` has approximately \(2^n\) nodes, leading to \(O(2^n)\) time complexity.
+
+  For example, in the worst case, `fibonacci_recursive(5)` involves 14 recursive calls, while for larger values of \(n\), the number of calls increases rapidly.
+
+#### Space Complexity:
+- **Linear Space Complexity**: \(O(n)\)
+
+  The space complexity is \(O(n)\) due to the depth of the recursion stack. Each recursive call adds a new frame to the call stack, and the maximum depth of the recursion is \(n\).
+
+### Iterative Fibonacci
+```python
+def fibonacci_iterative(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+    return b
+```
+
+#### Time Complexity:
+- **Linear Time Complexity**: \(O(n)\)
+
+  The iterative Fibonacci algorithm has a linear time complexity because it only requires a single loop that iterates \(n-1\) times. Each iteration performs a constant amount of work (updating the two variables `a` and `b`), so the time complexity is \(O(n)\).
+
+#### Space Complexity:
+- **Constant Space Complexity**: \(O(1)\)
+
+  The space complexity is \(O(1)\) because the iterative algorithm only uses a fixed amount of space (for the variables `a`, `b`, and the loop counter). There is no need for additional space proportional to the input size \(n\).
+
+### Summary of Differences:
+
+| Approach       | Time Complexity | Space Complexity |
+|----------------|-----------------|------------------|
+| **Recursive**  | \(O(2^n)\)      | \(O(n)\)         |
+| **Iterative**  | \(O(n)\)        | \(O(1)\)         |
+
+- **Recursive Approach**: The recursive method is much slower and consumes more space due to its exponential time complexity and the use of the call stack for each recursive call. It recalculates Fibonacci numbers multiple times, leading to inefficiency.
+
+- **Iterative Approach**: The iterative method is significantly more efficient with a linear time complexity and constant space complexity. It calculates each Fibonacci number only once and does not rely on a call stack, making it the preferred method for calculating Fibonacci numbers, especially for large \(n\).

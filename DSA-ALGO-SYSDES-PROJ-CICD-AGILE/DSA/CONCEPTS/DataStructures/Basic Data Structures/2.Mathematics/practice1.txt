@@ -1,0 +1,173 @@
+https://www.w3resource.com/python-exercises/re/
+
+
+
+let n = 1234.456700000
+let str = String(n); // n.toString() // `${n}`
+let fractionLenght = n.toString().split('.')[1].length;
+let fraction = (n - Math.floor(n)).toFixed(fractionLenght) 
+// 0.12339999999994689 without precision
+console.log(n,`"${str}"`, fraction) 
+
+let f = str.split('.')[1];
+console.log(f)
+console.log(Math.floor(123.9456))
+console.log(Math.ceil(123.9456))
+++++++++++++++++++++++++++++++++++++++++++
+import math
+n = 123.4560000
+str = f"{n}" # str(n)
+print(str)
+f = str.split('.')[1]
+f1 = math.floor(n)
+f2 = math.ceil(n)
+print(f1,f2)
+--------------------------------------------------------------------
+//scintific number handling
+let n = -1.123e50;
+let str = n.toString();
+let str2 = Math.floor(log10(Math.abs(n))) + 1;
+console.log(n, str, str2);
+//console.log(Math.log(4,10000)) -- it doesnt work in JS unlike python
+
+function log10(n){
+    return (Math.log(n) / Math.log(10));
+}
+++++++++++++++++++++++
+//scintific number handling
+let n = -1.123e50;
+let str = n.toString();
+let str2 = Math.floor(log10(Math.abs(n))) + 1;
+console.log(n, str, str2);
+//console.log(Math.log(4,10000)) -- it doesnt work in JS unlike python
+
+function log10(n){
+    return (Math.log(n) / Math.log(10));
+}
+----------------------------------------------------------------
+let print = console.log;
+let str = "-#123.5e50"
+//print(str-0)
+let st = str.replace(/-#|[\.e]/g, match => {
+    if(match === "-#"){
+        return "*";
+    } else if (match === "." || match === "e"){
+        return "&";
+    }
+})
+print(str, st) // [....] used for searching multiple characters
+print(st.match(/\*/))
+
+++++++++++++++++++++++++++++
+let print = console.log;
+let str = "-#123.5e50"
+//print(str-0)
+let st = str.replace(/-#|[\.e]/g, match => {
+    if(match === "-#"){
+        return "*";
+    } else if (match === "." || match === "e"){
+        return "&";
+    }
+})
+print(str, st) // [....] used for searching multiple characters
+print(st.match(/\*/))
+
+----------------------------------------------------------------
+1. Write a Python program to check that a string contains only a certain set of characters (in this case a-z, A-Z and 0-9).
+p = /^[a-zA-z0-9]+$/
+p = r'^[a-zA-Z0-9]+$' // is there is no + it consider only first char match
+
+2. Write a Python program that matches a string that has an 'a' followed by zero or more 'b's.
+p = /^ab*$/g
+p = r'^ab*$' // without $ in end can consider other chars after A
+
+3. Write a Python program that matches a string that has an a followed by one or more b's.
+p = /^ab+$/
+p = r'^ab+$'
+
+4. Write a Python program that matches a string that has an a followed by zero or one 'b'.
+p = /^ab?$/
+p = r'^ab?' // a followed by o or 1 time b ends
+
+5. Write a Python program that matches a string that has an a followed by three 'b'.
+p = /^ab{3}$/
+p = r'^ab{3}$' // a followed by 3 b's end
+
+6. Write a Python program that matches a string that has an a followed by two to three 'b'.
+p = r'^ab{2,3}$'
+
+7. Write a Python program to find sequences of lowercase letters joined by an underscore.
+p = r'^[a-z]+_[a-z]+$'
+
+8. Write a Python program to find the sequences of one upper case letter followed by lower case letters.
+p = r'(^[A-Z][a-z])+'
+
+9. Write a Python program that matches a string that has an 'a' followed by anything ending in 'b'.
+p = r'^a.*b$'
+
+10. Write a Python program that matches a word at the beginning of a string.
+p = r'^\w+'
+
+11. Write a Python program that matches a word at the end of a string, with optional punctuation.
+p = r'\w+\s*$'
+
+12. Write a Python program that matches a word containing 'z'.
+p = r'\w*z.\w*'
+
+13. Write a Python program that matches a word containing 'z', not the start or end of the word.
+p = r'\w+z.\w+'
+
+14. Write a Python program to match a string that contains only upper and lowercase letters, numbers, and underscores.
+p = r'^[a-zA-z0-9_]*$'
+
+15. Write a Python program that starts each string with a specific number.
+p = r'^5'
+
+16. Write a Python program to remove leading zeros from an IP address.
+---------------------------------------------------------------------------------
+let print = console.log;
+let text = "cat@good.com";
+text = "abB1"
+let pattern = /c.t/
+pattern = /[^a-zA-Z0-9]/g;
+pattern = /[a-zA-Z0-9]/g;
+pattern = /^[a-zA-Z0-9]+$/g;
+pattern = /^ab*/g
+print(pattern.test(text));
+print(text.match(pattern))
++++++++++++++++++++++++++++=
+import re
+text = "absh@"
+pattern = r'\w'
+#pattern = r'[a-z][A-Z][0-9]' # checks only first 3 chars
+#pattern = r'H' # checks only first char
+pattern = r'^[a-zA-Z0-9]+$' #checks all chars with pattern match
+pattern = r'[a-zA-Z0-9]' # first char should be non-alphanumaric
+#print(bool(re.search(pattern, text))) # search check pattern presense
+# match check the exact match
+text1 = "abb"
+text1 = "abb1b"
+pat = r'^ab*' # 0 or more b's - it can allow a,b,other chars
+#pat = r'^ab*$' # only should have a , b chars
+pat = r'^ab+$' # a followed by 1 or more b's and end
+pat = r'^ab?' # a folowed be 0 or 1 b can alow other chars
+pat = r'^ab?$' # a folowed be 0 or 1 b ends
+text1 = "a"
+text1 = "abbbbbbb"
+text1 = "ab1b"
+pat = r'^ab{3}$' # a followed by 3 b's and end
+text1 = "abbb" # true
+pat = r'^ab{2,3}$' # a followed by 2 to 3 b's and end
+text1 = "abbb" # false
+pat = r'^[a-z]+_[a-z]+$'
+text1 = "abbb_abgc"
+text1 = "abbb_abg1c"
+text1 = "AbCd"
+pat = r'(^[A-Z][a-z])+'
+text1 = "AbCd"
+pat = r'^a.*b$'
+text1 = "abCdbc"
+pat = r'^\w+'
+text1 = "word "
+print(bool(re.match(pat,text1)))
+----------------------------------------------------------------

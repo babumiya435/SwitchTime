@@ -1,0 +1,21 @@
+"""def fibonacci_iterative(n):
+    if n <= 0:
+        return 0
+    if n == 1:
+        return 1
+    a,b = 0,1
+    for _ in range(0, n-1):
+        a,b = b,a+b
+    print(b)
+    
+fibonacci_iterative(4)""" --> # time = O(n) # space = O(1)
+
+def fib_recursive(n):
+    if n <= 0:
+        return 0
+    if n == 1:
+        return 1
+    return fib_recursive(n-1) + fib_recursive(n-2)
+
+print(fib_recursive(4))  ---> time = O(2^n) # space = O(n)
+
