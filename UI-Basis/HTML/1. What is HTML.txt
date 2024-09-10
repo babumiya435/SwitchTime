@@ -1,0 +1,56 @@
+-   it is a one of the most widely uses markup- across, devices, browsers, systems.
+-   it is been the piller of world wide web (we can access or link various servers content using http urls over the internet)
+-   invented in 1991
+-   html like markup languages present - xml, readme, xhtml, json, svg, yaml
+-   used to create markup document with the .html or .htm extension can be used to create a web page in the browser
+-   browsers can render lot of the documents like : txt, js,etc , but html is the document - which consists of tags, 
+attributes information to the browser using which browser can render the structure of the web page as stated in the html document.
+-   html
+
+problem before html
+    - there is no proper universal structure of the web content across the systems, browsers, devices, and there is no www(worl wide web) rules
+        * html can solve this problem by providing www rules as part of basic building blocks like html, css.
+    - there no inter connectivity among the different content / pages?
+        * html can solve this problem using hyper links (<a src="http://test.com" />)
+    - there was a gap to retrieve or access the documents among the different servers?
+        * by creating html like documents we can retrieve/access them as easy as possible by hyperlinks
+    - there was no dynamic interactivity or dynamic behaviour change to the static content
+        * using html we can make web page more dynamic to its behavioural change and interactivity using other technologies like CSS, JS.
+--------------------------------------------------------------------------------
+Standardized Language: HTML created a universal format for documents, readable across different platforms and devices.
+
+Hyperlinks: Enabled seamless navigation between documents and resources via links, laying the foundation of the World Wide Web.
+
+Cross-Platform Compatibility: HTML ensured that documents could be created and viewed on any operating system or hardware.
+
+Rich Media Integration: It allowed the embedding of images, audio, and video into web pages, enhancing the user experience.
+
+Global Interconnectivity: HTML made it easy to access information from different networks, turning the web into a globally connected system.
+---------------------------------------------------------------------------------
+<html>
+    <head>
+        <title>
+            World Wide Web
+        </title>
+        <meta>
+    </head>
+    <body>
+        <div>
+            <h1></h1>
+            <a src="url" />
+            <form></form>
+            <table>
+                <th>
+                    <tr></tr>
+                </th>
+                <td>
+                    <tr></tr>
+                </td>
+            </table>
+            <ul><li></li></ul>
+            <ol><li></li></ol>
+            <img src="" alt="image alt text" />
+            .....etc
+        </div>
+    </body>
+</html>
