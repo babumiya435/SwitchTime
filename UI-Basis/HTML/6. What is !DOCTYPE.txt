@@ -1,0 +1,36 @@
+`<!DOCTYPE>` (Document Type Declaration) is an instruction that tells the web browser which version of HTML the page is written in. 
+It helps the browser interpret and render the content of the document correctly. In modern HTML (HTML5), the `<!DOCTYPE>` 
+declaration is required to ensure the page is rendered in **standards mode** rather than **quirks mode**.
+
+### Syntax
+The `<!DOCTYPE>` declaration is placed at the very top of an HTML document, before the `<html>` tag. It is not case-sensitive, 
+though it's commonly written in uppercase.
+
+### HTML5 Example:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example HTML5 Page</title>
+</head>
+<body>
+    <h1>Welcome to HTML5!</h1>
+</body>
+</html>
+```
+
+### Key Points:
+- **No Version Number:** In HTML5, the `<!DOCTYPE>` declaration is simply `<!DOCTYPE html>`, without specifying any version or DTD 
+(Document Type Definition), as it did in previous HTML versions.
+- **Standards Mode vs Quirks Mode:** Without the `<!DOCTYPE>` declaration, browsers may enter quirks mode, where they emulate behavior 
+for older, non-standard websites. In **standards mode**, browsers follow modern web standards to render the page.
+- **Backward Compatibility:** Older versions of HTML, like HTML 4.01 or XHTML, had more complex `<!DOCTYPE>` declarations that referenced
+specific DTDs. In contrast, HTML5’s declaration is much simpler and more developer-friendly.
+
+### Example of a Complex DOCTYPE in HTML 4.01:
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+```
+
+In summary, `<!DOCTYPE>` is essential for making sure the browser interprets the HTML code according to modern standards.

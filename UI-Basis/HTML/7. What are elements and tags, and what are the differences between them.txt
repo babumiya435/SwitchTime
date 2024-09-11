@@ -1,0 +1,80 @@
+7. What are elements and tags, and what are the differences between them?
+-----------------------------------------------------------------------------
+
+In HTML, **elements** and **tags** are fundamental concepts used to define and structure web content. Here’s a detailed explanation of 
+each and their differences:
+
+### **Tags**
+
+- **Definition:** Tags are the markup used to define elements in HTML. They are written in angle brackets and usually come in pairs: 
+an opening tag and a closing tag. Tags specify the beginning and end of an HTML element.
+  
+- **Syntax:**
+  - **Opening Tag:** `<tagname>`
+  - **Closing Tag:** `</tagname>`
+
+- **Example:**
+  ```html
+  <p>This is a paragraph.</p>
+  ```
+  - `<p>` is the opening tag.
+  - `</p>` is the closing tag.
+
+### **Elements**
+
+- **Definition:** Elements are the fundamental building blocks of an HTML document. An element is composed of an opening tag, content, 
+and a closing tag. In some cases, elements can be self-closing, meaning they do not have separate closing tags.
+
+- **Syntax:**
+  - **Start Tag:** `<tagname>`
+  - **Content:** The text or other HTML elements nested inside.
+  - **End Tag:** `</tagname>`
+
+- **Self-Closing Elements:** Some elements do not have a closing tag and are self-contained. In HTML5, self-closing elements are written 
+with just a start tag, e.g., `<img src="image.jpg" alt="Description">`.
+
+- **Example:**
+  ```html
+  <p>This is a paragraph.</p>
+  ```
+  - **Element:** `<p>This is a paragraph.</p>`
+    - **Start Tag:** `<p>`
+    - **Content:** `This is a paragraph.`
+    - **End Tag:** `</p>`
+
+### **Differences Between Elements and Tags**
+
+1. **Scope:**
+   - **Tags:** Refer specifically to the markup used to define the boundaries of an element.
+   - **Elements:** Encompass the entire construct, including the opening tag, content, and closing tag.
+
+2. **Usage:**
+   - **Tags:** Used in the syntax of HTML to create elements. They are the building blocks of elements.
+   - **Elements:** Are used to structure content on a web page. They are what tags create and describe.
+
+3. **Self-Closing Tags:**
+   - **Tags:** Some HTML tags can be self-closing and do not require a closing tag, such as `<img>` and `<br>`.
+   - **Elements:** Even self-closing elements are considered complete entities, even if they don’t have a closing tag.
+
+### **Examples**
+
+**Element with Opening and Closing Tags:**
+```html
+<div class="container">
+  <h1>Title</h1>
+  <p>Paragraph content.</p>
+</div>
+```
+- **Element:** `<div class="container"> ... </div>`
+  - **Opening Tag:** `<div class="container">`
+  - **Content:** `<h1>Title</h1> <p>Paragraph content.</p>`
+  - **Closing Tag:** `</div>`
+
+**Self-Closing Element:**
+```html
+<img src="logo.png" alt="Logo">
+```
+- **Element:** `<img src="logo.png" alt="Logo">`
+  - **Start Tag:** `<img src="logo.png" alt="Logo">` (Note: No separate closing tag)
+
+In summary, **tags** are the components of HTML syntax that create elements, while **elements** are the complete structures formed by these tags and their content.
