@@ -1,0 +1,59 @@
+17. What is the use of alt attribute in images?
+-----------------------------------------------
+
+The `alt` attribute (short for "alternative text") in the `<img>` tag is used to provide a textual description of an image. 
+This attribute serves several important purposes:
+
+### **1. Accessibility**
+
+- **Purpose:** The `alt` attribute helps improve accessibility for users who rely on screen readers. Screen readers read out the `alt` 
+text to describe the image to visually impaired users, providing context and information that they might not otherwise have.
+- **Example:**
+  ```html
+  <img src="logo.png" alt="Company Logo">
+  ```
+  - Here, a screen reader would read "Company Logo" to describe the image of the logo.
+
+### **2. Search Engine Optimization (SEO)**
+
+- **Purpose:** Search engines use the `alt` text to understand the content of an image, which can help improve the page's SEO. Including 
+relevant keywords in the `alt` text can contribute to better search engine rankings.
+- **Example:**
+  ```html
+  <img src="sunset.jpg" alt="Beautiful sunset over the mountains">
+  ```
+  - This description helps search engines understand what the image is about, potentially improving the page’s relevance for related 
+  search queries.
+
+### **3. Content Preservation**
+
+- **Purpose:** If an image fails to load due to a broken link or slow network, the `alt` text is displayed in place of the image. 
+This ensures that users still receive some information about the image.
+- **Example:**
+  ```html
+  <img src="product.jpg" alt="Product image showing a sleek modern design">
+  ```
+  - If "product.jpg" cannot be loaded, the text "Product image showing a sleek modern design" will be displayed instead.
+
+### **Best Practices for Writing `alt` Text**
+
+1. **Be Descriptive:** Provide a clear and concise description of the image content.
+   - **Example:** `<img src="dog.jpg" alt="Golden retriever playing with a ball in the park">`
+
+2. **Avoid Redundancy:** Do not use phrases like "image of" or "picture of" unless necessary. The context of the `alt` attribute already 
+indicates that it's describing an image.
+   - **Example:** `<img src="cake.jpg" alt="Chocolate birthday cake with candles">`
+
+3. **Keep It Short:** Aim for a brief description that conveys the essential information. However, for complex images, provide enough 
+detail to convey the context.
+   - **Example:** `<img src="map.jpg" alt="Map showing hiking trails in Yosemite National Park">`
+
+4. **Use Empty `alt` for Decorative Images:** If an image is purely decorative and does not convey meaningful content, use an empty `alt` 
+attribute (`alt=""`) to ensure screen readers ignore it.
+   - **Example:** `<img src="decorative-border.png" alt="">`
+
+### **Summary**
+
+The `alt` attribute in the `<img>` tag provides a textual description of an image, enhancing accessibility for screen readers, 
+contributing to SEO, and ensuring content is still accessible if the image fails to load. It should be descriptive, concise, and used 
+thoughtfully to improve user experience and content discoverability.

@@ -1,0 +1,135 @@
+10. What are attributes?
+---------------------------------
+
+Attributes in HTML provide additional information about elements, specifying their properties and how they should be rendered or behave. 
+They are defined in the opening tag of an HTML element and follow a `name="value"` format.
+
+### **Basic Syntax of Attributes**
+
+- **Format:** `name="value"`
+- **Placement:** Inside the opening tag of an HTML element.
+
+### **Common HTML Attributes with Code Examples**
+
+#### 1. **`id` Attribute**
+- **Purpose:** Provides a unique identifier for an element.
+- **Example:**
+  ```html
+  <div id="unique-id">This is a div with a unique ID.</div>
+  ```
+
+#### 2. **`class` Attribute**
+- **Purpose:** Assigns one or more class names to an element for styling with CSS or manipulation with JavaScript.
+- **Example:**
+  ```html
+  <p class="important-text">This paragraph has an important-text class.</p>
+  ```
+
+#### 3. **`href` Attribute**
+- **Purpose:** Specifies the URL of the page the link goes to.
+- **Example:**
+  ```html
+  <a href="https://www.example.com">Visit Example</a>
+  ```
+
+#### 4. **`src` Attribute**
+- **Purpose:** Defines the source of an image or other media.
+- **Example:**
+  ```html
+  <img src="logo.png" alt="Company Logo">
+  ```
+
+#### 5. **`alt` Attribute**
+- **Purpose:** Provides alternative text for an image if it cannot be displayed.
+- **Example:**
+  ```html
+  <img src="logo.png" alt="Company Logo">
+  ```
+
+#### 6. **`title` Attribute**
+- **Purpose:** Offers additional information about an element, usually displayed as a tooltip.
+- **Example:**
+  ```html
+  <button title="Click this button to submit">Submit</button>
+  ```
+
+#### 7. **`style` Attribute**
+- **Purpose:** Allows inline CSS styling for an element.
+- **Example:**
+  ```html
+  <p style="color: blue; font-size: 18px;">This text is styled inline.</p>
+  ```
+
+#### 8. **`name` Attribute**
+- **Purpose:** Used to identify form elements and to pass data in forms.
+- **Example:**
+  ```html
+  <input type="text" name="username" placeholder="Enter your username">
+  ```
+
+#### 9. **`target` Attribute**
+- **Purpose:** Specifies where to open the linked document.
+- **Example:**
+  ```html
+  <a href="https://www.example.com" target="_blank">Open Example in a New Tab</a>
+  ```
+
+#### 10. **`value` Attribute**
+- **Purpose:** Defines the value of form elements.
+- **Example:**
+  ```html
+  <input type="submit" value="Submit Form">
+  ```
+
+### **Examples in Context**
+
+#### Example 1: Complete Form with Multiple Attributes
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Example</title>
+</head>
+<body>
+
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+```
+- **`action`** specifies where to send the form data.
+- **`method`** determines how the data is sent (e.g., `post` or `get`).
+- **`id`** and **`name`** attributes are used for identifying and processing form elements.
+- **`required`** indicates that the field must be filled out before submitting.
+
+#### Example 2: Image with Attributes
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Example</title>
+</head>
+<body>
+
+    <img src="profile.jpg" alt="Profile Picture" width="150" height="150" title="Profile Picture of User">
+
+</body>
+</html>
+```
+- **`src`** specifies the image file.
+- **`alt`** provides alternative text for accessibility.
+- **`width`** and **`height`** define the image dimensions.
+- **`title`** provides additional information on hover.
+
+In summary, attributes are essential for defining the properties and behavior of HTML elements, and they greatly enhance the 
+flexibility and functionality of web pages.

@@ -1,0 +1,77 @@
+11. Are <b> and <strong> tags same? If not, then why?
+-----------------------------------------------------------
+
+The `<b>` and `<strong>` tags in HTML both render text in bold, but they have different purposes and semantic meanings. 
+Here’s a detailed comparison:
+
+### **`<b>` Tag**
+
+- **Purpose:** The `<b>` tag is used to apply a bold styling to text. It does not convey any special importance or emphasis to the text; 
+it is purely presentational.
+- **Usage:** Primarily used for styling text without implying any additional meaning.
+- **Example:**
+  ```html
+  <p>This is <b>bold text</b> using the b tag.</p>
+  ```
+
+### **`<strong>` Tag**
+
+- **Purpose:** The `<strong>` tag is used to indicate that the text is of strong importance or emphasis. It not only makes the text bold 
+but also suggests that the text has a semantic meaning or priority.
+- **Usage:** Used to convey emphasis or importance in the text, and browsers will typically render it as bold.
+- **Example:**
+  ```html
+  <p>This is <strong>important text</strong> using the strong tag.</p>
+  ```
+
+### **Differences**
+
+1. **Semantic Meaning:**
+   - **`<b>`:** No semantic meaning; it is used purely for visual presentation.
+   - **`<strong>`:** Has semantic meaning; it indicates that the enclosed text is of strong importance or should be emphasized.
+
+2. **Accessibility:**
+   - **`<b>`:** Does not provide any additional context to assistive technologies. Screen readers will only see the text as bold.
+   - **`<strong>`:** Provides context to assistive technologies by signaling that the text has strong importance, which can be useful for 
+   screen readers and other accessibility tools.
+
+3. **Styling:**
+   - Both tags render text as bold by default, but `<strong>` implies a deeper level of emphasis than `<b>`, which is purely stylistic.
+
+### **Example in Context**
+
+#### Using `<b>` for Styling
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example with <b> Tag</title>
+</head>
+<body>
+    <p>Check out this <b>bold text</b> for emphasis.</p>
+</body>
+</html>
+```
+
+#### Using `<strong>` for Emphasis
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example with <strong> Tag</title>
+</head>
+<body>
+    <p>Pay attention to this <strong>important text</strong> for crucial information.</p>
+</body>
+</html>
+```
+
+### **Summary**
+
+- **`<b>`**: Use for purely stylistic bold text.
+- **`<strong>`**: Use to indicate that the text has strong importance or emphasis, providing semantic meaning and enhancing accessibility.
+
+In modern web development, it’s recommended to use `<strong>` for emphasizing important content and `<b>` only when you need to apply 
+bold styling without adding semantic meaning.
