@@ -54,3 +54,5 @@ Global Interconnectivity: HTML made it easy to access information from different
         </div>
     </body>
 </html>
+----------------------------------------------------------------
+https://chatgpt.com/share/d5843b79-3355-4d3f-a0e9-325fafef7c43
