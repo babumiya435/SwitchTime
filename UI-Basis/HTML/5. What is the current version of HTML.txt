@@ -1,0 +1,10 @@
+5. What is the current version of HTML?
+-----------------------------------------------
+The current version of HTML is HTML5. While HTML itself doesn't follow a strict versioning system after HTML5, various improvements 
+and new features continue to be introduced as part of the HTML5 specification.
+
+HTML Living Standard, maintained by the WHATWG (Web Hypertext Application Technology Working Group), is now the ongoing standard. 
+This means that HTML is continuously updated and improved with new features, but without distinct version numbers like "HTML6." 
+The Living Standard approach ensures that web developers always have access to the latest features and best practices.
+
+For practical purposes, HTML5 is still considered the current version, with ongoing incremental updates to the specification.
