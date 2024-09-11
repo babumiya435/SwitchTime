@@ -1,0 +1,48 @@
+16. What is the use of the target attribute in the <link> tag?
+-----------------------------------------------------------------
+
+The `target` attribute is not typically used with the `<link>` tag in HTML. The `<link>` tag is used to define relationships between 
+the current document and external resources, such as linking to stylesheets, favicons, or prefetching resources. 
+
+### **Common Uses of the `<link>` Tag**
+
+1. **Linking to Stylesheets**
+   ```html
+   <link rel="stylesheet" href="styles.css">
+   ```
+   - **Purpose:** Links an external CSS file to the HTML document for styling.
+
+2. **Specifying a Favicon**
+   ```html
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   ```
+   - **Purpose:** Links to the favicon for the website, which appears in browser tabs and bookmarks.
+
+3. **Preloading Resources**
+   ```html
+   <link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   ```
+   - **Purpose:** Instructs the browser to preload a resource to improve performance.
+
+### **Attributes of the `<link>` Tag**
+
+- **`rel`**: Specifies the relationship between the current document and the linked resource.
+- **`href`**: Defines the URL of the linked resource.
+- **`type`**: Specifies the MIME type of the linked resource (e.g., `text/css` for stylesheets).
+- **`media`**: Specifies the media type for which the linked resource is intended (e.g., `print`, `screen`).
+- **`sizes`**: Used for specifying the size of icons in certain link types (e.g., `<link rel="icon" sizes="32x32" href="icon.png">`).
+- **`crossorigin`**: Specifies whether to include credentials when fetching the resource (e.g., `anonymous`).
+
+### **`target` Attribute in HTML**
+
+The `target` attribute is used with the `<a>` (anchor) tag to specify where to open a linked document. Its values are:
+
+- `_blank`: Opens the link in a new tab or window.
+- `_self`: Opens the link in the same frame (default behavior).
+- `_parent`: Opens the link in the parent frame.
+- `_top`: Opens the link in the full window.
+
+### **Summary**
+
+The `target` attribute does not apply to the `<link>` tag. Instead, it is used with the `<a>` tag to control where the linked document 
+opens. The `<link>` tag is used for linking external resources like stylesheets and favicons, and it does not have a `target` attribute.

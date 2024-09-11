@@ -1,0 +1,90 @@
+13. How are comments added in HTML?
+---------------------------------------
+
+In HTML, comments are used to add notes or explanations within the code that are not visible in the browser. Comments can help make the 
+code more readable and maintainable. They are ignored by the web browser and do not affect the rendering of the web page.
+
+### **Syntax for HTML Comments**
+
+- **Format:** `<!-- comment here -->`
+- **Placement:** Comments can be placed anywhere in the HTML document, including within tags, outside of tags, or between elements.
+
+### **Examples**
+
+#### 1. **Simple Comment**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Comment Example</title>
+</head>
+<body>
+
+    <!-- This is a comment. It will not appear in the browser. -->
+    <p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+#### 2. **Commenting Out Code**
+
+You can use comments to temporarily disable a part of the HTML code without deleting it:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Commenting Out Code</title>
+</head>
+<body>
+
+    <!-- <p>This paragraph is commented out and will not be displayed.</p> -->
+
+    <p>This paragraph is visible.</p>
+
+</body>
+</html>
+```
+
+#### 3. **Multi-line Comments**
+
+Comments can span multiple lines:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-line Comment Example</title>
+</head>
+<body>
+
+    <!--
+        This is a multi-line comment.
+        It can span multiple lines.
+        It will not be visible in the browser.
+    -->
+
+    <p>This is another visible paragraph.</p>
+
+</body>
+</html>
+```
+
+### **Best Practices**
+
+1. **Clarity:** Use comments to clarify complex sections of code, provide context, or explain the purpose of certain elements.
+2. **Avoid Overuse:** While comments are useful, overusing them can clutter your code. Use them judiciously to keep the code clean and 
+readable.
+3. **Avoid Sensitive Information:** Do not include sensitive information or passwords in comments as they are visible in the HTML source 
+code.
+
+### **Summary**
+
+HTML comments are added using `<!-- comment -->` syntax. They are useful for adding notes and explanations to the code and for 
+temporarily disabling code without deleting it. Comments improve code readability and maintenance but should be used wisely to avoid 
+cluttering the codebase.

@@ -1,0 +1,81 @@
+12. What is the difference between <em> and <i> tags?
+-----------------------------------------------------------
+
+The `<em>` and `<i>` tags in HTML both render text in italics, but they have different purposes and semantic meanings. Here’s a detailed 
+comparison:
+
+### **`<i>` Tag**
+
+- **Purpose:** The `<i>` tag is used to apply italic styling to text. It does not convey any special emphasis or meaning beyond its 
+visual representation.
+- **Usage:** Primarily used for styling text to appear in italics without implying any additional context or emphasis.
+- **Example:**
+  ```html
+  <p>This is <i>italic text</i> using the i tag.</p>
+  ```
+
+### **`<em>` Tag**
+
+- **Purpose:** The `<em>` tag is used to indicate that the text should be emphasized. This tag conveys a semantic meaning that the text 
+is of importance or should be stressed.
+- **Usage:** Used to give text emphasis, suggesting that the content is significant or carries extra weight. Browsers typically render it 
+as italicized text.
+- **Example:**
+  ```html
+  <p>This is <em>important text</em> using the em tag.</p>
+  ```
+
+### **Differences**
+
+1. **Semantic Meaning:**
+   - **`<i>`:** No semantic meaning; it is used purely for visual styling.
+   - **`<em>`:** Carries semantic meaning; it indicates that the enclosed text should be emphasized or stressed, implying that it is 
+   important in context.
+
+2. **Accessibility:**
+   - **`<i>`:** Provides no additional context to assistive technologies; it only changes the text appearance.
+   - **`<em>`:** Provides context to assistive technologies by signaling that the text is emphasized, which can be useful for screen 
+   readers and other accessibility tools.
+
+3. **Styling:**
+   - Both tags render text in italics by default. However, `<em>` is used when the text needs to be emphasized with semantic meaning, 
+   while `<i>` is used for visual styling without implying importance.
+
+### **Example in Context**
+
+#### Using `<i>` for Styling
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example with <i> Tag</title>
+</head>
+<body>
+    <p>Here is some <i>italicized text</i> with no additional emphasis.</p>
+</body>
+</html>
+```
+
+#### Using `<em>` for Emphasis
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example with <em> Tag</title>
+</head>
+<body>
+    <p>Make sure to read this <em>important note</em> for additional information.</p>
+</body>
+</html>
+```
+
+### **Summary**
+
+- **`<i>`**: Use for visual styling to make text italicized without implying any special meaning or emphasis.
+- **`<em>`**: Use to emphasize text, indicating that it should be stressed or is important in the context, which also helps with 
+accessibility and semantic meaning.
+
+In modern web development, it's recommended to use `<em>` for emphasizing important content and `<i>` for stylistic italic text that 
+does not carry additional meaning.
