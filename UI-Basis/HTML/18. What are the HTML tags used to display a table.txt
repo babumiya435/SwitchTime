@@ -1,0 +1,159 @@
+18. What are the HTML tags used to display a table?
+----------------------------------------------------
+
+In HTML, tables are created using a set of specific tags that define the structure and content of the table. Here are the primary HTML 
+tags used to display a table:
+
+### **1. `<table>`**
+
+- **Purpose:** Defines the table element.
+- **Example:**
+  ```html
+  <table>
+    <!-- Table content goes here -->
+  </table>
+  ```
+
+### **2. `<tr>`**
+
+- **Purpose:** Defines a table row.
+- **Usage:** Contains one or more `<td>` or `<th>` elements.
+- **Example:**
+  ```html
+  <tr>
+    <!-- Table cells go here -->
+  </tr>
+  ```
+
+### **3. `<th>`**
+
+- **Purpose:** Defines a table header cell.
+- **Usage:** Typically used in the first row of the table to represent column headings. Text in `<th>` elements is bold and centered by 
+default.
+- **Example:**
+  ```html
+  <th>Header 1</th>
+  <th>Header 2</th>
+  ```
+
+### **4. `<td>`**
+
+- **Purpose:** Defines a table data cell.
+- **Usage:** Contains the data for each cell in the table.
+- **Example:**
+  ```html
+  <td>Data 1</td>
+  <td>Data 2</td>
+  ```
+
+### **5. `<thead>`**
+
+- **Purpose:** Groups the header content in a table.
+- **Usage:** Contains one or more `<tr>` elements with `<th>` elements for the header rows.
+- **Example:**
+  ```html
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+  </thead>
+  ```
+
+### **6. `<tbody>`**
+
+- **Purpose:** Groups the body content in a table.
+- **Usage:** Contains one or more `<tr>` elements with `<td>` elements for the table body rows.
+- **Example:**
+  ```html
+  <tbody>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+    </tr>
+  </tbody>
+  ```
+
+### **7. `<tfoot>`**
+
+- **Purpose:** Groups the footer content in a table.
+- **Usage:** Contains one or more `<tr>` elements, often used to summarize or provide totals for the table data.
+- **Example:**
+  ```html
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>Sum</td>
+    </tr>
+  </tfoot>
+  ```
+
+### **Complete Example**
+
+Here's an example of a complete table structure using these tags:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Example</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 10px;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>Sum</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
+```
+
+### **Summary**
+
+- **`<table>`**: Defines the table.
+- **`<tr>`**: Defines a row within the table.
+- **`<th>`**: Defines a header cell.
+- **`<td>`**: Defines a data cell.
+- **`<thead>`**: Groups header content.
+- **`<tbody>`**: Groups body content.
+- **`<tfoot>`**: Groups footer content.
+
+These tags work together to create structured and readable tables in HTML.
