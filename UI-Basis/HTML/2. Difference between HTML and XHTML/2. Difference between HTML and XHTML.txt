@@ -1,0 +1,34 @@
+2. Difference between HTML and XHTML
+-----------------------------------------------
+HTML (HyperText Markup Language) and XHTML (eXtensible HyperText Markup Language) are both markup languages used to structure web content.
+However, there are key differences between them, mainly in terms of syntax, rules, and adherence to XML standards.
+-----------------------------------------------
+what are the Differences between HTML and XHTML with code exmples?
+    - 1. Syntax Rules: html(tags are not case sensitive), xHtml(tags are case sensitive, syntax to follow xml rules, more stricter than html, DOCTYPE is must)
+        
+    - 2. Case Sensitivity:
+        - html (<INPUT type=text /> or <input type=text /> are ok), xHtml(<input type = "text" />)
+    - 3. Closing Tags:
+        html(<input type=text > or <input type=text / are ok>), xHtml(<input type = "text" />)
+    - 4. Attribute Quoting;
+        - html(<input type=text /> or <input type="text" /> are ok), xHtml(<input type = "text" />)
+    - 5. Attribute Minimization:
+        - html(<input checked /> or <input checked = "checked" /> are ok), xHTML(<input checked = "checked" />)
+    - 6. Document Type Declaration (Doctype):
+        - <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> for "xhtml"
+        - <!DOCTYPE html> - for "html5"
+    - 7. Error Handling:
+        - HTML browsers are forgiving of errors and will attempt to render the page even if the markup contains mistakes
+        (chrome browser, and others may treat such errors differently hence we expect the stricter rules like xHtml).
+        - XHTML browsers will stop rendering the page if they encounter syntax errors, due to strict XML rules.
+
+
+what existing problems will xhtml solves?
+    -
+
+can we load both .html/.htm & .xhtml in the browser?
+    - YES
+
+How to write comments in html?
+    - <!-- we can write comments inside this syntax -->
+
