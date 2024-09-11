@@ -1,0 +1,10 @@
+4. What is the difference between HTML and HTML5?
+------------------------------------------------------
+
+1.What is the difference between HTML, HTML5 with code examples? (Defination)
+2.How existing problems in HTML can be solved by HTML5 with code examples? (how we can solve the problems with it)
+3.How to implement HTML5 with code examples? (syntax , implementation, other ways of implementation, which is better)
+4.What are the HTML5's uses/implementations/applications with code examples? (use cases, implementaions, real time technical uses)
+-----------------------------------------------
+
+https://chatgpt.com/share/4c3663b4-0df5-4d5a-9dda-e2f619becfd3

@@ -24,7 +24,7 @@ what are the Differences between HTML and XHTML with code exmples?
 
 
 what existing problems will xhtml solves?
-    -
+    - https://chatgpt.com/share/459c7706-47a3-43c0-9692-d23971a90910
 
 can we load both .html/.htm & .xhtml in the browser?
     - YES
