@@ -1,0 +1,21 @@
+What's the difference between git pull and git fetch?
+Describe a system/project you worked on.
+How to do troubleshooting faster?
+Can you explain a challenging project you worked on and how you overcame any obstacles during the development process?
+How website work from start to finish, include every detail you know.
+
+1.Design a image storage system
+2.System Design a data pipeline
+3.design a parking management system
+4.Url Shortener or To design the system for a URL shortener like bitly.
+5.Design a system for a generalized entity keeping in mind about concurrency, replication, etc.
+6.Design Cache
+7.How data can be replicated to support services across multiple data centers.
+8.How can you manage thousands of requests at the same time? All the requests cannot be processed at the same time. How are you gonna keep them waiting? Explain the architecture.
+9.I had a project on my resume in which I had implemented traffic distribution to different servers using percentages. For ex. if I have 3 servers A,B and C and I need to distribute 20,50 and 30% of traffic to each respectively, I could configure my system to do that distribution approximately. It is possible that there may be fluctuation of 3-4% at the end of the day in the distribution. So instead of A getting 20%, it gets only 18% while C gets 32% of the traffic.
+So the interviewer asked me to implement a system that distributes traffic to my servers strictly as configured and not approximately. Then also added a use case that what happens if I introduce a server D and want to divert exactly 1000 requests to it per hour? Not percentage wise but request count wise this time.
+10.A new user signs up and a new integer id is to be assigned to a newly created user. And this needs to happen in parallel. And needs to be replicated across 5 data centers. Design a system to do the same.
+11.Design an elevator system. Draw class diagram for same. The elevator system of the office building was very high-tech. If you are at elevator labelled `G` and you press the up button, you won't necessarily get elevator `G` but you might end up getting elevator labelled `F` if `F` is nearer.
+12.How would you distribute and limit incoming traffic between several API endpoints, if you have limit in N millions requests per second, and real traffic starts to exceed these value.
+13.How would you design this system so that user gets optimal response?
+14.how do you design a solution for a given natural number convert it to a letter .. ex . 47 --> forty seven - how to manage conflicts ? - ho do you design a logger and fallback if the API of agoda promotion code is down

@@ -1,0 +1,31 @@
+1.how do you use function components?
+2.Multi-threading questions
+3.Array sorting and algorithms
+4.pair programming (leetcode problems)
+5.Sort the table of leagues scores based on their scores
+6.Find target string permutation match among target string
+7.most frequent digit value in number maximum sum of sub array
+8.reverse sorted linked List
+9.Calculate square root of a double number
+10.JVM, race conditions, locking mechanism and Concurrent data structures
+11.Count all sub arrays that has elements sum to a k number. Sub array can have more elements than the input array
+12.Find duplicates in array and print the results
+13.Merge 2 sorted number arrays into a single sorted array, removing any duplicates.
+14.reimplement Levhestein distance algorithm
+15.Maximum sum contiguous subarray
+16.Write a program to calculate the sum of a list of integers, the partial integer sum could overflow, but the sum is guaranteed to be able to fit into a 32bit int type.
+17.1. A - Git: - add vs commit - pull vs fetch 
+	B - SQL query to retrieve some data. 
+	C - Find first non-repeating character in the string. 
+	D - How hash is implemented ? 
+	E - Shuffle an array. 
+	F - Process vs thread
+18.A global variable `x` is initialized to `0`. A function `f()` has a loop which runs from i=0 to 5 and increments value of `x` at each iteration. If `f()` is called once, when `f()` completes, the value of `x` will be 5. Now in our `main()` function, we create another loop which runs from j=0 to 5 and create a new thread in each iteration, and each thread calls `f()`, what is the maximum and minimum possible value of `x` after this loop ends?
+19.Find a loop in a simply linked list
+20.Implement a queue using array
+21.Write an algorithm to reverse an array
+22.Write a function to filter alphanumeric characters from string. How would you test it? Why you didn't use regular expression?
+23.Three sum algorithm question for coding
+24.What are collisions in HashMaps?
+25.Find the number of minimum steps to travel from a coordinate to another in a two dimensional array.
+26.Binary tree depth - String addition
