@@ -83,7 +83,77 @@ JavaScript Interview Questions and Answers (2024) – Advanced Level
 17. How to use any browser for debugging?
 18. What is javascript Hoisting? 
 19. What is the syntax of ‘Self Invoking Function’ ? 
-20. How to use external JavaScript file in another JavaScript file? 
++++++++++++++++++++++++++++++++++
+20. How to use external JavaScript file in another JavaScript file?
+
+To use an external JavaScript file in another JavaScript file, you have several options depending on the setup of your project and the JavaScript environment you're working in. Here are common methods:
+
+1. Using ES6 Modules (import/export)
+
+If your JavaScript files are set up as ES6 modules, you can use export to make functions, variables, or objects available in one file and import them into another file.
+
+Ensure both files are loaded as modules by adding type="module" to your <script> tags in HTML or by bundling them using tools like Webpack.
+
+
+// utils.js (exporting)
+export function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+// main.js (importing)
+import { greet } from './utils.js';
+console.log(greet("Alice"));
+
+In the HTML file, you’ll load main.js with type="module":
+
+<script type="module" src="main.js"></script>
+
+
+2. Using require (CommonJS, for Node.js)
+
+In Node.js, use module.exports and require to share functionality across files.
+
+This method works in environments like Node.js and with build tools like Webpack or Browserify.
+
+
+// utils.js
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+module.exports = { greet };
+
+// main.js
+const { greet } = require('./utils');
+console.log(greet("Alice"));
+
+3. Including External Script in HTML
+
+If you’re working in a browser environment, you can include multiple script files in HTML, and they will run in the order they’re included.
+
+For example, you might include utils.js first, so that main.js can use its functions.
+
+
+<script src="utils.js"></script>
+<script src="main.js"></script>
+
+This method works for simple setups but doesn’t create formal import/export relationships.
+
+
+4. Using eval() or Dynamic Imports (Advanced)
+
+You can dynamically import files at runtime using import() for conditional or asynchronous loading.
+
+
+// main.js
+import('./utils.js').then(module => {
+    module.greet("Alice");
+});
+
+import() returns a promise, so it’s useful in cases where you want to load modules conditionally.
+
+
+If you're working in a project with a bundler (like Webpack, Rollup, or Parcel), it’s common to use ES6 imports and exports, as the bundler will handle the module loading for you.
+
 
 
 ** SOLID principles **
