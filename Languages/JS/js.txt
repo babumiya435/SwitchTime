@@ -193,7 +193,6 @@ for (var i = 0; i < 3; i++) {
 
 ---
 
-Would you like answers and code explanations for each of these questions in a structured PDF or markdown format?
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
 20. How to use external JavaScript file in another JavaScript file?
 
