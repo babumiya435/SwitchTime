@@ -82,8 +82,119 @@ JavaScript Interview Questions and Answers (2024) – Advanced Level
 16. In JavaScript, answer if the following expressions result in true or false.
 17. How to use any browser for debugging?
 18. What is javascript Hoisting? 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+A **Self-Invoking Function** (also known as an Immediately Invoked Function Expression or **IIFE**) is a function in JavaScript that is defined and **executed immediately** after its creation.
+
+### ✅ Syntax of Self-Invoking Function (IIFE):
+```javascript
+(function() {
+    // code to be executed
+})();
+```
+
+### 📌 Explanation:
+- `function() { ... }` is the function expression.
+- Wrapping it in parentheses `( ... )` converts it from a declaration to an expression.
+- The trailing `()` **calls the function immediately**.
+
+### 🔁 Example:
+```javascript
+(function() {
+    console.log("IIFE executed!");
+})();
+```
+
+### ✅ Arrow Function IIFE (ES6+):
+```javascript
+(() => {
+    console.log("Arrow function IIFE executed!");
+})();
+```
+
+Would you like to see how IIFEs can be used for scope isolation or private variables?
 19. What is the syntax of ‘Self Invoking Function’ ? 
-+++++++++++++++++++++++++++++++++
+Here’s a comprehensive list of **interview questions** related to **IIFE (Immediately Invoked Function Expression)** — from basic to advanced, covering both theory and code-based queries.
+
+---
+
+## ✅ **Basic Questions**
+1. **What is an IIFE in JavaScript?**
+2. **What does IIFE stand for?**
+3. **What is the syntax of a self-invoking function?**
+4. **Why do we wrap the function in parentheses in an IIFE?**
+5. **How is an IIFE different from a regular function declaration?**
+6. **Can an IIFE be an arrow function?**
+7. **What is the return value of an IIFE?**
+
+---
+
+## 🔁 **Usage & Practical Application**
+8. **What are the use cases of an IIFE?**
+9. **How does an IIFE help in preventing global namespace pollution?**
+10. **How can IIFE be used to create private variables in JavaScript?**
+11. **Can you give an example of a module pattern using IIFE?**
+12. **Why are IIFEs used in module bundlers and frameworks (like jQuery or AngularJS)?**
+
+---
+
+## ⚠️ **Tricky / Conceptual Questions**
+13. **What happens if you forget to wrap the function in parentheses in an IIFE?**
+14. **Is it possible to pass parameters to an IIFE? How?**
+15. **What’s the difference between these two IIFEs?**
+
+```javascript
+(function() { })();
+(function() { }());
+```
+
+16. **What’s the output of this IIFE code?**
+```javascript
+var a = 10;
+(function() {
+  var a = 20;
+  console.log(a);
+})();
+console.log(a);
+```
+
+17. **Can you assign an IIFE to a variable? What happens?**
+
+---
+
+## 🔐 **Advanced Scope and Closure Questions**
+18. **How do IIFEs relate to closures in JavaScript?**
+19. **How can IIFE be used to emulate block scoping in ES5?**
+20. **How does an IIFE behave inside a loop when used with `var`?**
+
+---
+
+## 🧪 **Code-Based Questions**
+21. **Predict the output:**
+```javascript
+for (var i = 0; i < 3; i++) {
+  (function(i) {
+    setTimeout(() => console.log(i), 1000);
+  })(i);
+}
+```
+
+22. **Fix this issue using IIFE:**
+```javascript
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1000);
+}
+```
+
+23. **Create a simple module pattern using IIFE that has private and public methods.**
+
+24. **What is the difference between using IIFE and block scope (`let`, `const`) in ES6?**
+
+25. **Can you rewrite this ES6 module using an IIFE?**
+
+---
+
+Would you like answers and code explanations for each of these questions in a structured PDF or markdown format?
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
 20. How to use external JavaScript file in another JavaScript file?
 
 To use an external JavaScript file in another JavaScript file, you have several options depending on the setup of your project and the JavaScript environment you're working in. Here are common methods:
