@@ -81,8 +81,10 @@ JavaScript Interview Questions and Answers (2024) – Advanced Level
 15. What will be the output of the following code?
 16. In JavaScript, answer if the following expressions result in true or false.
 17. How to use any browser for debugging?
-18. What is javascript Hoisting? 
+**18. What is javascript Hoisting? **
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+** 19. What is the syntax of ‘Self Invoking Function’ ? **
 A **Self-Invoking Function** (also known as an Immediately Invoked Function Expression or **IIFE**) is a function in JavaScript that is defined and **executed immediately** after its creation.
 
 ### ✅ Syntax of Self-Invoking Function (IIFE):
@@ -112,7 +114,6 @@ A **Self-Invoking Function** (also known as an Immediately Invoked Function Expr
 ```
 
 Would you like to see how IIFEs can be used for scope isolation or private variables?
-19. What is the syntax of ‘Self Invoking Function’ ? 
 Here’s a comprehensive list of **interview questions** related to **IIFE (Immediately Invoked Function Expression)** — from basic to advanced, covering both theory and code-based queries.
 
 ---
@@ -194,7 +195,7 @@ for (var i = 0; i < 3; i++) {
 ---
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
-20. How to use external JavaScript file in another JavaScript file?
+** 20. How to use external JavaScript file in another JavaScript file? **
 
 To use an external JavaScript file in another JavaScript file, you have several options depending on the setup of your project and the JavaScript environment you're working in. Here are common methods:
 
